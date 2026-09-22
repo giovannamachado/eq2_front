@@ -47,7 +47,7 @@ class _OperationScreenState extends State<OperationScreen> {
             SizedBox(width: 8),
             Flexible(
               child: Text(
-                'Teleoperação - Kinova Gen3 Lite',
+                'Kinova Gen3 Lite',
                 overflow: TextOverflow.ellipsis,
               ),
             ),
@@ -96,14 +96,14 @@ class _OperationScreenState extends State<OperationScreen> {
                     children: [
                       Expanded(
                         child: VideoFeedPanel(
-                          title: 'Câmera do efetuador',
+                          title: 'Câmera do Robô 🤖' ,
                           streamUrl: AppConfig.effectorCameraTopic,
                         ),
                       ),
                       SizedBox(width: 16),
                       Expanded(
                         child: VideoFeedPanel(
-                          title: 'Câmera do operador',
+                          title: 'Câmera do Notebook 💻',
                           streamUrl: AppConfig.operatorCameraTopic,
                         ),
                       ),

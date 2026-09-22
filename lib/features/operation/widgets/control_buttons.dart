@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../core/theme/app_theme.dart';
 
-/// Botões de Start/Stop descritos na seção 2.4 (Front-End) e no RF#01.
+/// Botões de Start/Stop
 class ControlButtons extends StatelessWidget {
   const ControlButtons({
     super.key,

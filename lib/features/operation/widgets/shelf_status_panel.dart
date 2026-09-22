@@ -3,11 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../core/models/shelf_slot.dart';
 import '../../../core/theme/app_theme.dart';
 
-/// Mapa dos 8 slots da estante (2 andares x 4 colunas), exigido no Front-End
-/// (seção 2.4) e alimentado pelo RF#02 (Mapeamento de Inventário).
-///
-/// Recebe a lista de slots já processada pelo provider; nesta entrega os
-/// slots chegam com `SlotState.unknown` até o tópico de inventário existir.
+
 class ShelfStatusPanel extends StatelessWidget {
   const ShelfStatusPanel({super.key, required this.slots});
 
