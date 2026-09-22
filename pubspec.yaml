@@ -1,0 +1,33 @@
+name: eq_front
+description: "Front-end Flutter para teleoperação do braço robótico Kinova Gen3 Lite."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # Gerenciamento de estado
+  provider: ^6.1.2
+
+  # Fonte arredondada/divertida usada no tema (visual "arcade")
+  google_fonts: ^6.2.1
+
+  # Comunicação com o rosbridge_server (protocolo rosbridge v2 sobre WebSocket)
+  web_socket_channel: ^3.0.1
+
+  # NOTA (Entrega 2): quando o web_video_server estiver publicando os
+  # streams MJPEG, adicionar aqui o pacote `flutter_mjpeg` (ou similar) e
+  # usá-lo em lib/features/operation/widgets/video_feed_panel.dart.
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
