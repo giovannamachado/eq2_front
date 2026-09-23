@@ -13,14 +13,16 @@ Kinova Gen3 Lite. Este app **não processa vídeo nem robótica** — ele apenas
 1. Instale o [Flutter SDK](https://docs.flutter.dev/get-started/install) (canal stable).
    O repo já vem com as pastas de plataforma `linux/` e `web/` geradas
    (`flutter create --platforms=web,linux .`), não precisa gerar de novo.
-2. Baixe as dependências:
+2. Copie o arquivo de ambiente e ajuste se precisar:
+
+   ```bash
+   cp sample.env .env
+   ```
+3. Baixe as dependências:
 
    ```bash
    flutter pub get
    ```
-3. Ajuste `lib/core/config/app_config.dart` com o IP/porta reais do
-   `rosbridge_server` (o padrão é `ws://localhost:9090`, válido se o
-   container ROS estiver rodando na mesma máquina com portas publicadas).
 4. Rode o app:
 
    ```bash

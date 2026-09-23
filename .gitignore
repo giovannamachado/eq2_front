@@ -29,3 +29,6 @@ migrate_working_dir/
 .pub-cache/
 .pub/
 /build/
+
+# Variáveis de ambiente locais (use sample.env como modelo)
+.env

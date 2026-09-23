@@ -11,18 +11,24 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.8
 
-  # Gerenciamento de estado
-  provider: ^6.1.2
 
-  # Fonte arredondada/divertida usada no tema (visual "arcade")
   google_fonts: ^6.2.1
 
-  # Comunicação com o rosbridge_server (protocolo rosbridge v2 sobre WebSocket)
   web_socket_channel: ^3.0.1
 
-  # NOTA (Entrega 2): quando o web_video_server estiver publicando os
-  # streams MJPEG, adicionar aqui o pacote `flutter_mjpeg` (ou similar) e
-  # usá-lo em lib/features/operation/widgets/video_feed_panel.dart.
+
+  get_it: ^8.0.2
+
+
+  signals: ^7.1.0
+
+
+  go_router: ^18.0.0
+
+
+  flutter_dotenv: ^5.2.1
+
+
 
 dev_dependencies:
   flutter_test:
@@ -31,3 +37,5 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - .env
